@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { MessageBoxComponent } from './message-box/message-box.component';
 import { ConversationWindowComponent } from './conversation-window/conversation-window.component';
 import { MessageComponent } from './message/message.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
 
 @NgModule({
   declarations: [
@@ -18,7 +20,8 @@ import { MessageComponent } from './message/message.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

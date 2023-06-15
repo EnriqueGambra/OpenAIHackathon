@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { MessageService } from '../message.service';
+import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-message-box',
@@ -7,6 +8,9 @@ import { MessageService } from '../message.service';
   styleUrls: ['./message-box.component.scss'],
 })
 export class MessageBoxComponent {
+
+  public faSend = faPaperPlane
+
   constructor(private MessageService: MessageService) {}
 
   onSubmit(event: any) {

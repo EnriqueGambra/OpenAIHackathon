@@ -22,12 +22,13 @@ export class ConversationWindowComponent implements OnInit {
     });
   }
 
-  postMessage(messageContent: string) {
-    const message: Message = {
-      message: messageContent,
-      sender: 'User'
-    }
-    this.messages.push(message);
+  postMessage(messageContent: Message) {
+    // const message: Message = {
+    //   message: messageContent,
+    //   sender: 'User'
+    // }
+    console.log('messageContent: ', messageContent);
+    this.messages.push(messageContent);
     //setTimeout in case apicall fails.
     //do api call
     // on failure of api call remove message

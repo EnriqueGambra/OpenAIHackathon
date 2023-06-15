@@ -1,3 +1,9 @@
 main {
   height: calc(100vh - 60px);
 }
+
+.flex-container {
+  display: flex;
+  flex-direction: column-reverse;
+  padding-left: 10px;
+}

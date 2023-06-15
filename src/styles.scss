@@ -1,5 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
-// @import "~@fortawesome/fontawesome-free/css/all.css";
+// @import "@fortawesome/free-regular-svg-icons";
+// @import "@fortawesome/free-solid-svg-icons";
+// @import "@fortawesome/free-brands-svg-icons";
+// @import "@fortawesome/fontawesome-free/css/fontawesome.css";
+
 
 // Variables
 $background: #1f1f1f;
@@ -23,8 +27,8 @@ body {
 }
 
 body {
-  background-color: $background;
-  color: $text-color;
+  // background-color: $background;
+  // color: $text-color;
 }
 
 a {

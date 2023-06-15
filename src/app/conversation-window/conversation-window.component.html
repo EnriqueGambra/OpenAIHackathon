@@ -1,5 +1,5 @@
-<main>
-    <ng-container *ngFor="let message of messages">
-        <app-message [message]="message"/>
+<main class="flex-container">
+    <ng-container *ngFor="let message of messages.reverse()">
+        <app-message [ngStyle]="{'background-color': message.sender === 'Bot' ? '#F7F7F8' : 'unset' }" [message]="message"/>
     </ng-container>
 </main>

@@ -1,3 +1,7 @@
-<div>
+<div class="message-container" 
+  [ngClass]="{ 'user-message': message.sender == 'User', 'bot-message': message.sender == 'Bot' }">
+
+  <fa-icon [icon]="message.sender === 'User' ? userIcon : botIcon" size="lg" style="padding-right: 10px;"></fa-icon>
+
   {{ message.message }}
 </div>
