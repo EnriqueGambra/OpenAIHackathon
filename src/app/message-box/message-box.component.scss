@@ -1,0 +1,16 @@
+$margin: 12px;
+
+input {
+  padding-right: 10px;
+  height: 58px;
+  width: 98%;
+  margin-left: $margin;
+}
+
+button {
+  position: absolute;
+  right: calc(10px + $margin);
+  margin-top: $margin;
+  width: 30px;
+  height: 30px;
+}
