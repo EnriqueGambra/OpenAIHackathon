@@ -2,9 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { MessageService } from '../message.service';
 
 export interface Message {
-  sender: 'User'|'Bot',
-  message: string,
-  id?: number,
+  sender: 'User' | 'Bot';
+  message: string;
+  id?: number;
 }
 
 @Component({

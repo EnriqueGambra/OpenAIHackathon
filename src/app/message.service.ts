@@ -13,6 +13,9 @@ export class MessageService {
   constructor(private HttpClient: HttpClient) {}
 
   post(message: string) {
+    if (message.length < 1) {
+      return;
+    }
 
     const userMessage: Message = {
       message: message,
@@ -22,7 +25,7 @@ export class MessageService {
     this.messageReceived.next(userMessage);
 
     const botResponse: Message = {
-      message: 'Message From Bot',
+      message: 'Responding to your query of ' + message ,
       sender: 'Bot'
     }
 
