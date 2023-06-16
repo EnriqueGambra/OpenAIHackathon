@@ -3,6 +3,7 @@ $margin: 15px;
 input {
   padding-left: 5px;
   padding-right: 10px;
+  font-size: 1.1rem;
   height: 50px;
   width: calc(100% - calc($margin * 2));
   margin-left: $margin;
