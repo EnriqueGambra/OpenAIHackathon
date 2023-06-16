@@ -1,19 +1,26 @@
-$margin: 12px;
+$margin: 15px;
 
 input {
+  padding-left: 5px;
   padding-right: 10px;
-  height: 58px;
-  width: 98%;
+  font-size: 1.1rem;
+  height: 50px;
+  width: calc(100% - calc($margin * 2));
   margin-left: $margin;
+  margin-right: $margin;
 }
 
 button {
   position: absolute;
   right: calc(10px + $margin);
-  margin-top: $margin;
+  margin-top: calc($margin - 5px);
   width: 30px;
   height: 30px;
   background-color: unset;
   border: none;
   cursor: pointer;
+
+  &:hover {
+    scale: 1.2;
+  }
 }

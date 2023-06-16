@@ -1,17 +1,18 @@
 .user-message {
-    // background-color: blue;
 }
 
 .bot-message {
-    background-color: #F7F7F8;
+  background-color: #f7f7f8;
 }
 
 .message-container {
-    height: 85px;
-    margin-left: 20px;
-    text-align: center;
-    line-height: 85px;
-    align-items: flex-start;
-    display: flex;
-    // vertical-align: middle;
+  height: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
+  align-items: flex-start;
+  display: flex;
+  word-wrap: normal;
 }
